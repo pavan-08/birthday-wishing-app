@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.birthday.happybirthday.Fragments.Answer">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/bgMsg" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/trendinggredient"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <com.birthday.happybirthday.RoundedImageView
+        android:layout_margin="20dp"
+        android:layout_centerHorizontal="true"
+        android:transitionName="image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/msgImg"
+        />
+
+    <TextView
+        android:id="@+id/msgTxt"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-light"
+        android:layout_below="@id/msgImg"
+        android:background="@drawable/text_bg"
+        android:layout_marginBottom="48dp"
+        android:elevation="10dp"
+        android:transitionName="text"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:textColor="#333"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

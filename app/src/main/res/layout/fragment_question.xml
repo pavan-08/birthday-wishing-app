@@ -1,0 +1,43 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.birthday.happybirthday.Fragments.Question">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/bgMain" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/trendinggredient"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.birthday.happybirthday.RoundedImageView
+                android:layout_width="200dp"
+                android:layout_centerVertical="true"
+                android:layout_height="200dp"
+                android:id="@+id/mainImage"
+                android:transitionName="image"
+                android:layout_centerHorizontal="true" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Happy birthday Shivani!"
+                android:gravity="center"
+                android:transitionName="text"
+                android:textColor="#fff"
+                android:textSize="30sp"
+               android:fontFamily="sans-serif-light"
+                android:layout_margin="10dp"
+                android:layout_above="@id/mainImage"
+                android:id="@+id/bdyText"/>
+
+        </RelativeLayout>
+
+
+</FrameLayout>

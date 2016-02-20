@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+    tools:context="com.birthday.happybirthday.Fragments.NavigationFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/navRel"
+        >
+        <ImageView
+            android:layout_width="280dp"
+            android:layout_height="170dp"
+            android:id="@+id/navbg"/>
+        <ImageView
+            android:layout_width="280dp"
+            android:layout_height="170dp"
+            android:src="@drawable/trendinggredient"/>
+    <com.birthday.happybirthday.RoundedImageView
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="75dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/home"
+        android:clickable="true"
+        android:layout_alignParentTop="true" />
+    </RelativeLayout>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:id="@+id/refresher"
+        android:layout_below="@id/navRel"
+        android:layout_marginBottom="48dp"
+        android:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:id="@+id/namesRecycler"
+         />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <ProgressBar
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:indeterminate="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/progress"
+        style="?android:attr/progressBarStyle"
+        />
+
+
+</RelativeLayout>

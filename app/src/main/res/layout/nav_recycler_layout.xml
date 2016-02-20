@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:background="?attr/selectableItemBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.birthday.happybirthday.RoundedImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:id="@+id/imgRecycler"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"/>
+    <TextView
+
+        android:layout_width="fill_parent"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/imgRecycler"
+        android:layout_toEndOf="@id/imgRecycler"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textSize="16sp"
+        android:textColor="#333"
+        android:text="Medium Text"
+        android:id="@+id/nameTextView"
+        android:layout_alignParentTop="true"
+        />
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<com.birthday.happybirthday.CustomDrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer"
+    tools:context=".MainActivity">
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="@string/app_name"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:id="@+id/toolBar"
+            android:paddingTop="@dimen/toolBarPadding"
+            android:elevation="5dp"
+            app:titleTextAppearance="@style/Toolbar"
+            android:background="@color/royalBlue"
+            android:layout_alignParentTop="true"
+            />
+    <RelativeLayout
+        android:layout_below="@id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/frag_container">
+
+    </RelativeLayout>
+    </RelativeLayout>
+        <fragment
+            android:layout_gravity="start"
+            android:layout_width="280dp"
+            android:id="@+id/navFragment"
+            android:layout_height="match_parent"
+            app:layout="@layout/fragment_navigation"
+            android:name="com.birthday.happybirthday.Fragments.NavigationFragment"
+            tools:layout="@layout/fragment_navigation" />
+
+
+
+</com.birthday.happybirthday.CustomDrawerLayout>
